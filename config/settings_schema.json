@@ -8,6 +8,39 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Shipping",
+    "settings": [
+      {
+        "type": "text",
+        "id": "shipping_begin",
+        "label": "Shipping begin",
+        "info": "Strictly follow the pattern: hh:mm+Divides, e.g. 08:30AM",
+        "default": "08:30AM"
+      },
+      {
+        "type": "text",
+        "id": "shipping_end",
+        "label": "Shipping end",
+        "info": "Strictly follow the pattern: hh:mm+Divides, e.g. 04:30PM",
+        "default": "04:30PM"
+      },
+      {
+        "type": "text",
+        "id": "default_delivery_days",
+        "label": "Product default delivery time",
+        "info": "Write only a number",
+        "default": "3"
+      },
+      {
+        "type": "text",
+        "id": "shop_time_zone",
+        "label": "The time zone of the store.",
+        "info": "You can see it in the store's settings. This is required for the premium shipping feature. E.g. GMT+01:00",
+        "default": "GMT+01:00"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

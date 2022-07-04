@@ -16,13 +16,10 @@
         {{ settings.underheading }} 
         <span class="premium-shipping__delivery-date"></span>
     </p>
-    <p class="premium-shipping__delivery-condition premium-shipping__delivery-condition_a hidden">
-        {{ settings.delivery_condition_a }} 
-        <span class="premium-shipping__time-to-end"></span>
-    </p>
-    <p class="premium-shipping__delivery-condition premium-shipping__delivery-condition_b hidden">
-        {{ settings.delivery_condition_b }} <span class="premium-shipping__begin">{{ settings.shipping_begin }}</span> tomorrow
-    </p>
+    <div class="premium-shipping__message_wrapper">
+        <span class="premium-shipping__message"></span>
+        <span class="premium-shipping__time-display"></span>
+    </div>
 </div>
 
 <script class="premium-shipping-data" type="application/json">
@@ -31,7 +28,10 @@
         "shipping_end": "{{ settings.shipping_end }}",
         "default_delivery_days": "{{ settings.default_delivery_days }}",
         "product_delivery_days": "{{ p.metafields.shipping.delivery_days }}",
-        "shop_time_zone": "{{ settings.shop_time_zone }}"
+        "shop_time_zone": "{{ settings.shop_time_zone }}",
+        "message_untill_close": "{{ settings.message_untill_close }}",
+        "message_after_close": "{{ settings.message_after_close }}",
+        "message_before_open": "{{ settings.message_before_open }}"
     }
 </script>
 

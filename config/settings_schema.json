@@ -32,11 +32,120 @@
         "default": "3"
       },
       {
-        "type": "text",
+        "type": "select",
         "id": "shop_time_zone",
-        "label": "The time zone of the store.",
-        "info": "Use the following timezone format by example: Europe/Berlin",
-        "default": "Europe/Berlin"
+        "label": "Vertical alignment",
+        "options": [
+          {
+            "value": "-1200",
+            "label": "GMT-12:00"
+          },
+          {
+            "value": "-1100",
+            "label": "GMT-11:00"
+          },
+          {
+            "value": "-1000",
+            "label": "GMT-10:00"
+          },
+          {
+            "value": "-0900",
+            "label": "GMT-09:00"
+          },
+          {
+            "value": "-0800",
+            "label": "GMT-08:00"
+          },
+          {
+            "value": "-0700",
+            "label": "GMT-07:00"
+          },
+          {
+            "value": "-0600",
+            "label": "GMT-06:00"
+          },
+          {
+            "value": "-0500",
+            "label": "GMT-05:00"
+          },
+          {
+            "value": "-0400",
+            "label": "GMT-04:00"
+          },
+          {
+            "value": "-0300",
+            "label": "GMT-03:00"
+          },
+          {
+            "value": "-0200",
+            "label": "GMT-02:00"
+          },
+          {
+            "value": "-0100",
+            "label": "GMT-01:00"
+          },
+          {
+            "value": "+0000",
+            "label": "GMT+00:00"
+          },
+          {
+            "value": "+0100",
+            "label": "GMT+01:00"
+          },
+          {
+            "value": "+0200",
+            "label": "GMT+02:00"
+          },
+          {
+            "value": "+0300",
+            "label": "GMT+03:00"
+          },
+          {
+            "value": "+0400",
+            "label": "GMT+04:00"
+          },
+          {
+            "value": "+0500",
+            "label": "GMT+05:00"
+          },
+          {
+            "value": "+0600",
+            "label": "GMT+06:00"
+          },
+          {
+            "value": "+0700",
+            "label": "GMT+07:00"
+          },
+          {
+            "value": "+0800",
+            "label": "GMT+08:00"
+          },
+          {
+            "value": "+0900",
+            "label": "GMT+09:00"
+          },
+          {
+            "value": "+1000",
+            "label": "GMT+10:00"
+          },
+          {
+            "value": "+1100",
+            "label": "GMT+11:00"
+          },
+          {
+            "value": "+1200",
+            "label": "GMT+12:00"
+          },
+          {
+            "value": "+1245",
+            "label": "GMT+12:45"
+          },
+          {
+            "value": "+1300",
+            "label": "GMT+13:00"
+          }
+        ],
+        "default": "+0200"
       },
       {
         "type": "text",
@@ -58,14 +167,20 @@
       },
       {
         "type": "text",
-        "id": "delivery_condition_a",
-        "label": "Message about the delivery condition during the store opening hours.",
+        "id": "message_untill_close",
+        "label": "Message untill shipping end",
         "default": "If you order within"
       },
       {
         "type": "text",
-        "id": "delivery_condition_b",
-        "label": "Message about the delivery condition when the store is closed.",
+        "id": "message_after_close",
+        "label": "Message after shipping end",
+        "default": "If you order untill"
+      },
+      {
+        "type": "text",
+        "id": "message_before_open",
+        "label": "Message before shipping end",
         "default": "If you order untill"
       }
     ]

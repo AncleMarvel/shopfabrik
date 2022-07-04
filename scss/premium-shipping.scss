@@ -1,0 +1,22 @@
+@mixin font-style {
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #000000C7;
+}
+
+.premium-shipping {
+    background: #00000005;
+    padding: 10px;
+    padding-right: 16.5px;
+}
+
+.premium-shipping__heading,
+.premium-shipping__delivery-time,
+.premium-shipping__message_wrapper {
+    @include font-style;
+    margin: 0;
+}
+
+.premium-shipping__heading {
+    font-weight: 600;
+}

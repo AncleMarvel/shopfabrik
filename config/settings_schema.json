@@ -8,6 +8,184 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Shipping",
+    "settings": [
+      {
+        "type": "text",
+        "id": "shipping_begin",
+        "label": "Shipping begin",
+        "info": "Strictly follow the pattern: hh:mm+Divides, e.g. 08:30AM",
+        "default": "08:30AM"
+      },
+      {
+        "type": "text",
+        "id": "shipping_end",
+        "label": "Shipping end",
+        "info": "Strictly follow the pattern: hh:mm+Divides, e.g. 04:30PM",
+        "default": "04:30PM"
+      },
+      {
+        "type": "text",
+        "id": "default_delivery_days",
+        "label": "Product default delivery time",
+        "info": "Write only a number",
+        "default": "3"
+      },
+      {
+        "type": "select",
+        "id": "shop_time_zone",
+        "label": "Vertical alignment",
+        "options": [
+          {
+            "value": "-1200",
+            "label": "GMT-12:00"
+          },
+          {
+            "value": "-1100",
+            "label": "GMT-11:00"
+          },
+          {
+            "value": "-1000",
+            "label": "GMT-10:00"
+          },
+          {
+            "value": "-0900",
+            "label": "GMT-09:00"
+          },
+          {
+            "value": "-0800",
+            "label": "GMT-08:00"
+          },
+          {
+            "value": "-0700",
+            "label": "GMT-07:00"
+          },
+          {
+            "value": "-0600",
+            "label": "GMT-06:00"
+          },
+          {
+            "value": "-0500",
+            "label": "GMT-05:00"
+          },
+          {
+            "value": "-0400",
+            "label": "GMT-04:00"
+          },
+          {
+            "value": "-0300",
+            "label": "GMT-03:00"
+          },
+          {
+            "value": "-0200",
+            "label": "GMT-02:00"
+          },
+          {
+            "value": "-0100",
+            "label": "GMT-01:00"
+          },
+          {
+            "value": "+0000",
+            "label": "GMT+00:00"
+          },
+          {
+            "value": "+0100",
+            "label": "GMT+01:00"
+          },
+          {
+            "value": "+0200",
+            "label": "GMT+02:00"
+          },
+          {
+            "value": "+0300",
+            "label": "GMT+03:00"
+          },
+          {
+            "value": "+0400",
+            "label": "GMT+04:00"
+          },
+          {
+            "value": "+0500",
+            "label": "GMT+05:00"
+          },
+          {
+            "value": "+0600",
+            "label": "GMT+06:00"
+          },
+          {
+            "value": "+0700",
+            "label": "GMT+07:00"
+          },
+          {
+            "value": "+0800",
+            "label": "GMT+08:00"
+          },
+          {
+            "value": "+0900",
+            "label": "GMT+09:00"
+          },
+          {
+            "value": "+1000",
+            "label": "GMT+10:00"
+          },
+          {
+            "value": "+1100",
+            "label": "GMT+11:00"
+          },
+          {
+            "value": "+1200",
+            "label": "GMT+12:00"
+          },
+          {
+            "value": "+1245",
+            "label": "GMT+12:45"
+          },
+          {
+            "value": "+1300",
+            "label": "GMT+13:00"
+          }
+        ],
+        "default": "+0200"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Free Premium Shipping:"
+      },
+      {
+        "type": "text",
+        "id": "underheading",
+        "label": "Underheading",
+        "default": "Guaranteed delivery"
+      },
+      {
+        "type": "color",
+        "id": "underheading_color",
+        "label": "Underheading color",
+        "default": "#399E16"
+      },
+      {
+        "type": "text",
+        "id": "message_untill_close",
+        "label": "Message untill shipping end",
+        "default": "If you order within"
+      },
+      {
+        "type": "text",
+        "id": "message_after_close",
+        "label": "Message after shipping end",
+        "default": "If you order untill"
+      },
+      {
+        "type": "text",
+        "id": "message_before_open",
+        "label": "Message before shipping end",
+        "default": "If you order untill"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

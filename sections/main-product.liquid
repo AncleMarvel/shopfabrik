@@ -228,6 +228,12 @@
             {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
+          
+          {%- when 'premium_shipping' -%}
+            {%
+              render 'component-premium-shipping',
+              p: product  
+            %}
           {%- when 'collapsible_tab' -%}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}">
@@ -650,6 +656,11 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "premium_shipping",
+      "name": "Premium shipping",
+      "settings": []
     },
     {
       "type": "text",

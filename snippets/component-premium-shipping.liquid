@@ -2,11 +2,7 @@
     @param p <product>
 {%- endcomment -%}
 
-<style>
-    .premium-shipping__delivery-time {
-        color: {{ settings.underheading_color }};
-    }
-</style>
+{{ 'premium-shipping.css' | asset_url | stylesheet_tag }}
 
 <div class="premium-shipping">
     <h4 class="premium-shipping__heading">
@@ -21,6 +17,12 @@
         <span class="premium-shipping__time-display"></span>
     </div>
 </div>
+
+<style>
+    .premium-shipping__delivery-time {
+        color: {{ settings.underheading_color }};
+    }
+</style>
 
 <script class="premium-shipping-data" type="application/json">
     {

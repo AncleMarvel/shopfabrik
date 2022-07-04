@@ -35,8 +35,38 @@
         "type": "text",
         "id": "shop_time_zone",
         "label": "The time zone of the store.",
-        "info": "You can see it in the store's settings. This is required for the premium shipping feature. E.g. GMT+01:00",
-        "default": "GMT+01:00"
+        "info": "Use the following timezone format by example: Europe/Berlin",
+        "default": "Europe/Berlin"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Free Premium Shipping:"
+      },
+      {
+        "type": "text",
+        "id": "underheading",
+        "label": "Underheading",
+        "default": "Guaranteed delivery"
+      },
+      {
+        "type": "color",
+        "id": "underheading_color",
+        "label": "Underheading color",
+        "default": "#399E16"
+      },
+      {
+        "type": "text",
+        "id": "delivery_condition_a",
+        "label": "Message about the delivery condition during the store opening hours.",
+        "default": "If you order within"
+      },
+      {
+        "type": "text",
+        "id": "delivery_condition_b",
+        "label": "Message about the delivery condition when the store is closed.",
+        "default": "If you order untill"
       }
     ]
   },

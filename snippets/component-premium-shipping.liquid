@@ -1,14 +1,38 @@
+{%- comment -%}
+    @param p <product>
+{%- endcomment -%}
+
+<style>
+    .premium-shipping__delivery-time {
+        color: {{ settings.underheading_color }};
+    }
+</style>
+
 <div class="premium-shipping">
     <h4 class="premium-shipping__heading">
-        Free Premium Shipping:
+        {{ settings.heading }}
     </h4>
     <p class="premium-shipping__delivery-time">
-        Guaranteed delivery 04. March 2022
+        {{ settings.underheading }} 
+        <span class="premium-shipping__delivery-date"></span>
     </p>
-    <p class="premium-shipping__delivery-condition">
-        If you order within 5h 30m
-        {%- comment -%}
-        If you order until 4:30PM tomorrow
-        {%- endcomment -%}
+    <p class="premium-shipping__delivery-condition premium-shipping__delivery-condition_a hidden">
+        {{ settings.delivery_condition_a }} 
+        <span class="premium-shipping__time-to-end"></span>
+    </p>
+    <p class="premium-shipping__delivery-condition premium-shipping__delivery-condition_b hidden">
+        {{ settings.delivery_condition_b }} <span class="premium-shipping__begin">{{ settings.shipping_begin }}</span> tomorrow
     </p>
 </div>
+
+<script class="premium-shipping-data" type="application/json">
+    {
+        "shipping_begin": "{{ settings.shipping_begin }}",
+        "shipping_end": "{{ settings.shipping_end }}",
+        "default_delivery_days": "{{ settings.default_delivery_days }}",
+        "product_delivery_days": "{{ p.metafields.shipping.delivery_days }}",
+        "shop_time_zone": "{{ settings.shop_time_zone }}"
+    }
+</script>
+
+<script src="{{ 'shipping-calculate.js' | asset_url }}" defer></script>
